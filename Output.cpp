@@ -18,11 +18,9 @@ void OUTPUT::comportement(){
 			tmp_val1 =in_data.read();
 			tmp_val2 =in_data.read();
 			fileStream << tmp_val1 << " " << tmp_val2 << endl;
-			wait();
-		} else {
-			cout<<"Finished printing"<<endl;
+			cout << "writing" << endl;
 		}
-				
+		wait();
 	}
 		
 

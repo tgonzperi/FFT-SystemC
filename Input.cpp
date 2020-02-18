@@ -6,7 +6,7 @@ using std::cout;
 using std::endl;
 
 void INPUT::COMPORTEMENT(){
-  std::ifstream fileStream("in_real.txt");
+  std::ifstream fileStream("input_samples.txt");
 
   float tmp_val1, tmp_val2;
 
@@ -21,13 +21,13 @@ void INPUT::COMPORTEMENT(){
         fileStream >> tmp_val1 >> tmp_val2;
         out.write(tmp_val1);
         out.write(tmp_val2);
-        wait();
+	cout << "reading" << endl;
       }else{
-        cerr << "No space available" << endl;
+        cout << "No space available" << endl;
       }
     }else{
       cout << "End of File" << endl;
-      wait();
     }
+	wait();
   }
 }
