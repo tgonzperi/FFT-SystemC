@@ -1,5 +1,5 @@
 $date
-     Feb 18, 2020       10:41:15
+     Feb 18, 2020       11:32:23
 $end
 
 $version
@@ -136,22 +136,14 @@ r0 aaaao
 r0 aaaap
 
 #18
-r2011 aaaaq
-r2011 aaaar
-r2011 aaaas
-r2011 aaaat
-r2011 aaaau
-r2011 aaaav
-r2011 aaaaw
-r2011 aaaax
-r2011 aaaay
-r2011 aaaaz
-r2011 aaaba
-r2011 aaabb
-r2011 aaabc
-r2011 aaabd
-r2011 aaabe
-r2011 aaabf
+r16088 aaaaq
+r16088 aaaar
+r0 aaaas
+r0 aaaat
+r0 aaaau
+r0 aaaav
+r0 aaaaw
+r0 aaaax
 
 #20
 r0 aaaaa
@@ -159,44 +151,34 @@ r0 aaaab
 r0 aaaaq
 r0 aaaar
 
-#22
-r0 aaaas
-r0 aaaat
-
-#24
-r0 aaaau
-r0 aaaav
-
-#26
-r0 aaaaw
-r0 aaaax
-
-#28
-r0 aaaay
-r0 aaaaz
-
-#30
-r0 aaaba
-r0 aaabb
-
 #32
 r456 aaaab
-r0 aaabc
-r0 aaabd
 
 #34
 r120 aaaac
 r234 aaaad
 r1 aaaaq
 r1 aaaar
-r0 aaabe
-r0 aaabf
+r1 aaaas
+r1 aaaat
+r1 aaaau
+r1 aaaav
+r1 aaaaw
+r1 aaaax
+r1 aaaay
+r1 aaaaz
+r1 aaaba
+r1 aaabb
+r1 aaabc
+r1 aaabd
 
 #36
 r234 aaaae
 r120 aaaaf
 r0 aaaaq
 r0 aaaar
+r1 aaabe
+r1 aaabf
 
 #38
 r0 aaaab
@@ -205,55 +187,70 @@ r0 aaaad
 r0 aaaae
 r0 aaaaf
 r120 aaaag
+r0 aaaas
+r0 aaaat
 
 #40
 r0 aaaag
 r-120 aaaaj
+r0 aaaau
+r0 aaaav
 
 #42
 r0 aaaaj
 r-120 aaaak
 r-234 aaaal
+r0 aaaaw
+r0 aaaax
 
 #44
 r0 aaaak
 r0 aaaal
 r-234 aaaam
 r-456 aaaan
+r0 aaaay
+r0 aaaaz
 
 #46
 r0 aaaam
 r0 aaaan
 r-120 aaaao
 r-768 aaaap
+r0 aaaba
+r0 aaabb
 
 #48
 r123 aaaaa
 r29 aaaab
 r0 aaaao
 r0 aaaap
+r0 aaabc
+r0 aaabd
 
 #50
 r34 aaaac
 r34 aaaad
-r456 aaaar
-r120 aaaas
-r234 aaaat
-r234 aaaau
-r120 aaaav
-r120 aaaaw
-r-120 aaaaz
-r-120 aaaba
-r-234 aaabb
-r-234 aaabc
-r-456 aaabd
+r-768 aaaar
+r1449.984008789062 aaaas
+r-443.5433044433594 aaaat
+r768 aaaau
+r672 aaaav
+r297.9839782714844 aaaaw
+r916.7207641601562 aaaax
+r768 aaaaz
+r-297.9839782714844 aaaba
+r659.5432739257812 aaabb
+r-768 aaabc
+r672 aaabd
+r0 aaabe
+r0 aaabf
 
 #52
 r-23 aaaae
 r85 aaaaf
 r0 aaaar
-r-120 aaabe
-r-768 aaabf
+r-1449.984008789062 aaabe
+r1171.279174804688 aaabf
 
 #54
 r0 aaaaa
@@ -280,6 +277,7 @@ r0 aaaai
 r0 aaaaj
 r593 aaaal
 r0 aaaaw
+r0 aaaax
 
 #60
 r0 aaaal
@@ -304,27 +302,28 @@ r0 aaabc
 r0 aaabd
 
 #66
-r123 aaaaq
-r29 aaaar
-r34 aaaas
-r34 aaaat
-r-23 aaaau
-r85 aaaav
-r12 aaaaw
-r206 aaaax
-r45 aaaay
-r336 aaaaz
-r593 aaabb
-r67 aaabc
-r823 aaabd
+r392 aaaaq
+r2528 aaaar
+r-1097.699096679688 aaaas
+r-397.3122253417969 aaaat
+r123 aaaau
+r-431 aaaav
+r157.68359375 aaaaw
+r-92.23697662353516 aaaax
+r32 aaaay
+r18 aaaaz
+r-222.3009033203125 aaaba
+r-36.68777084350586 aaabb
+r125 aaabc
+r-655 aaabd
 r0 aaabe
 r0 aaabf
 
 #68
 r0 aaaaq
 r0 aaaar
-r134 aaabe
-r422 aaabf
+r1474.31640625 aaabe
+r-701.7630004882812 aaabf
 
 #70
 r0 aaaaa
@@ -345,6 +344,7 @@ r0 aaaay
 r0 aaaaz
 
 #78
+r0 aaaba
 r0 aaabb
 
 #80
