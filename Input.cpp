@@ -17,7 +17,7 @@ void INPUT::COMPORTEMENT(){
 
   while(true){
     if(!fileStream.eof()){
-      if(oul.num_free()>0){
+      if(out.num_free()>0){
         fileStream >> tmp_val1 >> tmp_val2;
         out.write(tmp_val1);
         out.write(tmp_val2);
@@ -26,7 +26,7 @@ void INPUT::COMPORTEMENT(){
         cerr << "No space available" << endl;
       }
     }else{
-      cout << "End of File"; << endl;
+      cout << "End of File" << endl;
       wait();
     }
   }

@@ -8,7 +8,7 @@ SC_MODULE (TOP) {
   // signals
  
 public:
-  sc_clock_in clk;
+  sc_in_clk clk;
   sc_fifo<float> fifo_FFT_input, fifo_FFT_output;
 	
   // instanciate
@@ -17,8 +17,8 @@ public:
   FFT8		fft8; 	
 
   SC_CTOR(TOP):
-	Input("input")
-	Output("output")
+	Input("input"),
+	Output("output"),
 	fft8("fft8")
       {
 	Input.out(fifo_FFT_input);

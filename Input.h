@@ -12,5 +12,5 @@
       SC_THREAD(COMPORTEMENT);
       sensitive << clk.pos();
     }
-  }
+  };
 #endif

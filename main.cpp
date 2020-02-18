@@ -1,4 +1,5 @@
 #include <systemc.h>
+#include "TOP.h"
 
 int sc_main ( int argc, char *argv[])
 {
@@ -7,14 +8,14 @@ int sc_main ( int argc, char *argv[])
 
 	//Creation des traces 
 	sc_trace_file *tf = sc_create_vcd_trace_file("trace");
-	tf->set_time_until(1, SC_NS);
+	tf->set_time_unit(1, SC_NS);
 	
 
 	mainTop.fifo_FFT_input.trace(tf);
 	mainTop.fifo_FFT_output.trace(tf);
 
 
-	sc_start(2000, SC_NS)
+	sc_start(2000, SC_NS);
 	//fin
 	cout<< "Finished at" << sc_time_stamp() << "\n";
 	//Fermeture du fichier de traces
