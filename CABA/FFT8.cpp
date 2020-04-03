@@ -10,14 +10,14 @@
 
 
 struct complex_t {
-	sc_fixed<23,18> real;
-	sc_fixed<23,18> imag;
+	sc_fixed<wl,iwl> real;
+	sc_fixed<wl,iwl> imag;
 };
 
 
 struct  complex_w {
-	sc_fixed<24,2> real;
-	sc_fixed<24,2> imag;
+	sc_fixed<wl+1,2> real;
+	sc_fixed<wl+1,2> imag;
 };
 
 void fft(complex_t in[8], complex_t out[8]);
@@ -25,7 +25,7 @@ void fft(complex_t in[8], complex_t out[8]);
 
 
 void FFT8::comportement(){
-  sc_fixed<23,18> aux[16];
+  sc_fixed<wl,iwl> aux[16];
   sc_int<6> i=0;
   complex_t in[8],out[8];
 

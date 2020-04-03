@@ -6,7 +6,7 @@ void OUTPUT::comportement(){
 
 	std::ofstream fileStream("output.txt");
 
-	sc_fixed<wl,iwl> tmp_val1, tmp_val2;
+	sc_int<L> tmp_val1, tmp_val2;
 
 	if(!fileStream)
 		cout<<"Can not write the output"<<endl;
@@ -18,7 +18,10 @@ void OUTPUT::comportement(){
 			data_req = false;
 			tmp_val1 = in_data_real.read();
 			tmp_val2 = in_data_imag.read();
+			cout << "Parte real saliendo " << ":" << tmp_val1 << endl;
+			cout << "Parte imag saliendo " << ":" << tmp_val2 << endl;
 			fileStream << tmp_val1 << " " << tmp_val2 << endl;
+			cout << "writing" << endl;
 		}else{
 		data_req = true;
 		}

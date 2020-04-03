@@ -11,7 +11,7 @@ public:
   sc_in_clk clk;
   //sc_fifo<float> fifo_FFT_input, fifo_FFT_output;
   bool s_valid;
-  sc_signal< sc_fixed<wl,iwl> > s_input_real, s_input_imag, s_output_real, s_output_imag;
+  sc_signal< sc_int<L> > s_input_real, s_input_imag, s_output_real, s_output_imag;
   sc_signal<bool> s_data_valid_input, s_data_req_input, s_data_valid_output, s_data_req_output;
   // instanciate
   INPUT		Input;
