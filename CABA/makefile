@@ -5,8 +5,11 @@ OBJ= $(SRC:.cpp=.o)
 HEA= $(SRC:.cpp=.h)
 
 CC=g++
-SYSTEMC=/opt/systemc-2.3.3
-#SYSTEMC=/opt/systemc/systemc-2.3.1
+ifeq ($(USER),tomas)
+	SYSTEMC=/opt/systemc/systemc-2.3.1
+else
+	SYSTEMC=/opt/systemc-2.3.3
+endif
 LDFLAGS= -L$(SYSTEMC)/lib-linux64 -Wl,-rpath=$(SYSTEMC)/lib-linux64 -lsystemc -lm
 CXXFLAGS= -W -Wall -pedantic -g -I$(SYSTEMC)/include -DDEBUG_SYSTEMC -DSC_INCLUDE_FX
 

@@ -19,7 +19,6 @@ void OUTPUT::comportement(){
 			tmp_val1 = in_data_real.read();
 			tmp_val2 = in_data_imag.read();
 			fileStream << tmp_val1 << " " << tmp_val2 << endl;
-			cout << "writing" << endl;
 		}else{
 		data_req = true;
 		}

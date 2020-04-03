@@ -40,7 +40,6 @@ void FFT8::comportement(){
         aux[i]  = in_data_real.read();
         i++;
         aux[i]  = in_data_imag.read();
-        cout << i << endl;
         data_req_fft = false;
         if(16 == ++i){
           break;
@@ -48,28 +47,22 @@ void FFT8::comportement(){
       }else{
       data_req_fft = 1;
       }
-      cout << "hola"<< data_req_fft << endl;
       wait();
     }
 	for(int j = 0; j<8; j++){
 		in[j].real = aux[j*2];
 		in[j].imag = aux[j*2+1];
-    cout << "Parte real " << j << ":" << in[j].real << endl;
-    cout << "Parte imag " << j << ":" << in[j].imag << endl;
 	}
 
 	fft(in, out);
 	for(int j = 0; j<8; j++){
 		aux[j*2] = out[j].real;
 		aux[j*2+1] = out[j].imag;
-    cout << "Parte real " << j << ":" << out[j].real << endl;
-    cout << "Parte imag " << j << ":" << out[j].imag << endl;
 	}
 
     i = 0;
     while(i<16){
       if(!data_valid_fft){
-        cout << "data_valid_fft = false" << endl;
         out_data_real.write(aux[i]);
         i++;
         out_data_imag.write(aux[i]);

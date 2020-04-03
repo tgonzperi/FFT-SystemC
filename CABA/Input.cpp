@@ -5,6 +5,8 @@
 using std::cout;
 using std::endl;
 
+const int NUM_INPUT = 32;
+
 void INPUT::COMPORTEMENT(){
   std::ifstream fileStream("input_samples.txt");
 
@@ -15,23 +17,22 @@ void INPUT::COMPORTEMENT(){
     cerr<<"The file is not opened"<<endl;
 
   wait();
-
+  int i = 0;
   while(true){
-    if(!fileStream.eof()){
+    if(i < NUM_INPUT){
       if(!data_valid){
         fileStream >> tmp_val1 >> tmp_val2;
-        cout << "Parte real entr " << ":" << tmp_val1 << endl;
-        cout << "Parte imag entr " << ":" << tmp_val2 << endl;
         out_real.write(tmp_val1);
         out_imag.write(tmp_val2);
-	      cout << "reading" << endl;
         data_valid = true;
+        i++;
       }else if(data_req){
         data_valid = false;
       }
-    }else{
+    }else if(i == NUM_INPUT){
       cout << "End of File" << endl;
       data_valid = false;
+      i++;
     }
 	wait();
   }
